@@ -1,6 +1,5 @@
 import 'package:dars_8/services/firebase_auth_service.dart';
 import 'package:dars_8/utils/messages.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/my_textfield.dart';

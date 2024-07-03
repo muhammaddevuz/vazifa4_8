@@ -9,7 +9,7 @@ class UserController extends ChangeNotifier {
     return quizFirebaseServices.getOrders();
   }
 
-  void addUser(String id, String email, int correctAnswer) {
-    quizFirebaseServices.addUser(id, email, correctAnswer);
+  void addUser(String id, String email) {
+    quizFirebaseServices.addUser(id, email);
   }
 }

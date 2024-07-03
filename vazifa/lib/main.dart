@@ -1,5 +1,4 @@
 import 'package:dars_8/controllers/cart_controller.dart';
-import 'package:dars_8/controllers/product_controller.dart';
 import 'package:dars_8/controllers/products_controller.dart';
 import 'package:dars_8/controllers/user_controller.dart';
 import 'package:dars_8/firebase_options.dart';
@@ -28,9 +27,6 @@ class MainApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (ctx) {
           return CartController();
-        }),
-        ChangeNotifierProvider(create: (ctx) {
-          return ProductController();
         }),
         ChangeNotifierProvider(create: (ctx) {
           return ProductsController();

@@ -1,9 +1,7 @@
 import 'package:dars_8/services/firebase_auth_service.dart';
 import 'package:dars_8/utils/messages.dart';
-import 'package:dars_8/utils/routes.dart';
 import 'package:dars_8/views/screens/firspage.dart';
 import 'package:dars_8/views/screens/register_screen.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/my_textfield.dart';
@@ -31,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
         Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => Firspage(),
+              builder: (context) => const Firspage(),
             ));
       });
       // Navigator.pop(context);
@@ -109,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => RegisterScreen(),
+                        builder: (context) => const RegisterScreen(),
                       ));
                 },
                 child: const Text("Ro'yxatdan O'tish"),

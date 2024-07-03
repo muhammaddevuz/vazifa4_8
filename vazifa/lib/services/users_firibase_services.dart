@@ -25,7 +25,7 @@ class UsersFiribaseServices {
     return box2;
   }
 
-  void addUser(String id, String email, int correctAnswer) {
+  void addUser(String id, String email) {
     userCollection.doc(id).set({
       "email": email,
     });

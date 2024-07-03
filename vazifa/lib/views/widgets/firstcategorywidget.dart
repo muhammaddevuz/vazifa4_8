@@ -1,4 +1,3 @@
-import 'package:dars_8/views/screens/category_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 
@@ -24,15 +23,15 @@ class _FirstcategorywidgetState extends State<Firstcategorywidget> {
       children: [
         ZoomTapAnimation(
           onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => CategoryScreen(
-                  categoryName: widget.categoryName,
-                  imageUrl: widget.imageUrl,
-                ),
-              ),
-            );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) => CategoryScreen(
+            //       categoryName: widget.categoryName,
+            //       imageUrl: widget.imageUrl,
+            //     ),
+            //   ),
+            // );
           },
           child: Container(
             width: 200,

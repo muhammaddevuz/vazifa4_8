@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dars_8/models/cart.dart';
 import 'package:dars_8/models/product.dart';

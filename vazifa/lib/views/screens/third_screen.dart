@@ -1,5 +1,4 @@
 import 'package:dars_8/controllers/cart_controller.dart';
-import 'package:dars_8/controllers/product_controller.dart';
 import 'package:dars_8/models/product.dart';
 import 'package:dars_8/views/widgets/cart_widget.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,7 +13,6 @@ class ThirdScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cardController = context.watch<CartController>();
-    final productController = Provider.of<ProductController>(context);
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -182,7 +180,6 @@ class ThirdScreen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                productController.isLiked(product.id);
               },
               child: Container(
                 width: 50,

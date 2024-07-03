@@ -6,7 +6,7 @@ class FirebaseAuthServices {
 
   
   Future<void> signIn(String email, String password) async {
-    final box = await FirebaseAuth.instance
+    await FirebaseAuth.instance
         .signInWithEmailAndPassword(email: email, password: password);
   }
 
@@ -14,7 +14,7 @@ class FirebaseAuthServices {
     try {
       final box = await FirebaseAuth.instance
           .createUserWithEmailAndPassword(email: email, password: pasword);
-      userController.addUser(box.user!.uid, email, 0);
+      userController.addUser(box.user!.uid, email);
     } catch (e) {
       return;
     }
